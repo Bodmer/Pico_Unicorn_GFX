@@ -64,6 +64,10 @@
 
     // The Adafruit_GFX library will use this fn for all graphics operations
     void drawPixel(int16_t x, int16_t y, uint16_t color);
+
+    // Compatibility functions
+    void begin(void);
+    uint16_t color565(uint8_t r, uint8_t g, uint8_t b);
   };
 
 //}

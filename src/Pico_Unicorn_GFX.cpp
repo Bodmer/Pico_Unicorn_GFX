@@ -313,9 +313,18 @@ void PicoUnicorn::from_hsv(float h, float s, float v, uint8_t &r, uint8_t &g, ui
   }
 }
 
+// Compatibility function
+  void PicoUnicorn::begin() {
+    init();
+  }
+
   void PicoUnicorn::drawPixel(int16_t x, int16_t y, uint16_t color) {
     if((x < 0) ||(x >= 16) || (y < 0) || (y >= 7)) return;
     set_pixel(x, y, (color & 0xF800)>>8, (color & 0x07E0)>>3, (color & 0x1F)<<3);
   }
 
+uint16_t PicoUnicorn::color565(uint8_t r, uint8_t g, uint8_t b)
+{
+  return ((r & 0xF8) << 8) | ((g & 0xFC) << 3) | (b >> 3);
+}
 //}
