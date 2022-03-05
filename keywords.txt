@@ -1,40 +1,29 @@
 #######################################
-# Syntax Coloring Map For arduinoFFT
+# Syntax Coloring Map For PicoUnicorn
 #######################################
 
 #######################################
 # Datatypes (KEYWORD1)
 #######################################
 
-arduinoFFT	KEYWORD1
+PicoUnicorn	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
 
-ComplexToMagnitude	KEYWORD2
-Compute	KEYWORD2
-DCRemoval	KEYWORD2
-Windowing	KEYWORD2
-Exponent	KEYWORD2
-Revision	KEYWORD2
-MajorPeak	KEYWORD2
+init	KEYWORD2
+clear	KEYWORD2
+set_pixel	KEYWORD2
+is_pressed	KEYWORD2
+from_hsv	KEYWORD2
+drawPixel	KEYWORD2
+begin	KEYWORD2
+color565	KEYWORD2
 
 #######################################
 # Constants (LITERAL1)
 #######################################
 
-twoPi	LITERAL1
-fourPi	LITERAL1
-FFT_FORWARD	LITERAL1
-FFT_REVERSE	LITERAL1
-FFT_WIN_TYP_RECTANGLE	LITERAL1
-FFT_WIN_TYP_HAMMING	LITERAL1
-FFT_WIN_TYP_HANN	LITERAL1
-FFT_WIN_TYP_TRIANGLE	LITERAL1
-FFT_WIN_TYP_NUTTALL	LITERAL1
-FFT_WIN_TYP_BLACKMAN	LITERAL1
-FFT_WIN_TYP_BLACKMAN_NUTTALL	LITERAL1
-FFT_WIN_TYP_BLACKMAN_HARRIS	LITERAL1
-FFT_WIN_TYP_FLT_TOP	LITERAL1
-FFT_WIN_TYP_WELCH	LITERAL1
+WIDTH	LITERAL1
+HEIGHT	LITERAL1
